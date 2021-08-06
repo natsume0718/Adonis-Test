@@ -5,6 +5,7 @@
   "scripts": {
     "build": "node ace build --production",
     "start": "node server.js",
+    "nws": "nw ./build",
     "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
@@ -33,10 +34,13 @@
     "@adonisjs/view": "^6.0.0",
     "@types/puppeteer-core": "^5.4.0",
     "luxon": "^2.0.1",
+    "nw": "^0.55.0-sdk",
     "proxy-addr": "^2.0.7",
     "puppeteer-core": "^10.2.0",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.19",
     "sqlite3": "^5.0.2"
-  }
+  },
+  "node-main": "./server.js",
+  "main": "http://localhost:3333"
 }
