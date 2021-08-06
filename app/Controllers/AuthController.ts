@@ -1,8 +1,8 @@
-import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+// import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import puppeteer from 'puppeteer-core'
 
 export default class AuthController {
-  public async check(ctx: HttpContextContract) {
+  public async check() {
     const br = await puppeteer.launch({
       // update 2021/08/05
       channel: 'chrome',

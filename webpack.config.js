@@ -209,6 +209,8 @@ config.infrastructureLogging = {
 }
 config.stats = 'errors-warnings'
 
+Encore.enableReactPreset()
+
 /*
 |--------------------------------------------------------------------------
 | Export config
